@@ -1,0 +1,89 @@
+# GitHub Pages の Organization サイト（リポジトリ名を mm4scireal.github.io にする）。
+# サブパスなしのルート公開のため baseURL は末尾スラッシュのみ。
+baseURL = 'https://mm4scireal.github.io/'
+locale = 'en-us'
+title = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'
+theme = 'PaperMod'
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[pagination]
+pagerSize = 10
+
+[outputs]
+home = ['HTML', 'RSS', 'JSON']
+
+[markup.goldmark.renderer]
+unsafe = true
+
+#######################################
+# PaperMod パラメータ
+#######################################
+[params]
+env = 'production'
+title = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'
+description = 'MM4SciReal: Multimodal AI for Science and the Real World, Workshop at ACCV 2026.'
+keywords = ['MM4SciReal', 'ACCV 2026', 'Multimodal AI', 'AI for Science', 'Vision-Language Models', 'Computer Vision', 'Workshop']
+DateFormat = 'January 2, 2006'
+defaultTheme = 'auto'
+disableThemeToggle = false
+ShowReadingTime = false
+ShowShareButtons = false
+ShowPostNavLinks = false
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = false
+ShowWordCount = false
+ShowToc = false
+hideMeta = true
+ShowFullTextinRSS = false
+mainSections = ['news']
+
+[params.label]
+text = 'MM4SciReal'
+
+[params.assets]
+disableHLJS = true
+disableFingerprinting = false
+
+[[params.socialIcons]]
+name = 'email'
+title = 'Contact the organizers'
+url = 'mailto:mm4scireal@googlegroups.com'
+
+#######################################
+# ナビゲーションメニュー
+#######################################
+[[menu.main]]
+identifier = 'home'
+name = 'Home'
+url = '/'
+weight = 10
+
+[[menu.main]]
+identifier = 'cfp'
+name = 'Call for Papers'
+url = '/call-for-papers/'
+weight = 20
+
+[[menu.main]]
+identifier = 'program'
+name = 'Program'
+url = '/program/'
+weight = 30
+
+[[menu.main]]
+identifier = 'speakers'
+name = 'Speakers'
+url = '/speakers/'
+weight = 40
+
+[[menu.main]]
+identifier = 'organizers'
+name = 'Organizers'
+url = '/organizers/'
+weight = 50

@@ -1,0 +1,88 @@
+/* Home ヒーロー: 背景画像にタイトル等をオーバーレイ表示する */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 380px;
+  margin: 0 0 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #1e3a8a; /* 画像読み込み前のフォールバック */
+  /* バンドル後の stylesheet は /<base>/assets/css/ に出力されるため、
+     画像はそこから 2 階層上の /<base>/images/ を相対指定する（サブパス公開でも壊れない）。 */
+  background-image: url("../../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* テキスト可読性のための下方向グラデーション */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 15, 35, 0) 30%,
+    rgba(10, 15, 35, 0.78) 100%
+  );
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2.25rem;
+  color: #fff;
+}
+
+/* PaperMod の `.md-content h1` / `.md-content p:not(:last-child)` は詳細度が高いため、
+   クラス3つ分の詳細度で上書きする。 */
+.hero .hero__inner .hero__abbr {
+  display: inline-block;
+  margin: 0 0 0.55rem;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.hero .hero__inner .hero__title {
+  margin: 0 0 0.4rem;
+  color: #fff;
+  font-size: clamp(1.7rem, 4.2vw, 2.6rem);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.hero .hero__inner .hero__subtitle {
+  margin: 0 0 0.5rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  font-weight: 600;
+}
+
+.hero .hero__inner .hero__meta {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hero__meta a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 300px;
+  }
+  .hero__inner {
+    padding: 1.5rem;
+  }
+}

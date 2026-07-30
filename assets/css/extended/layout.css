@@ -1,0 +1,12 @@
+/* ヘッダーは広く、本文は読みやすい行長に抑える。
+   PaperMod 既定の本文 720px は左右が空きすぎるため 900px に広げている。 */
+:root {
+  --nav-width: 1024px;
+  --main-width: 900px;
+}
+
+/* front matter の description は meta タグ / OGP 用に残しつつ、
+   タイトル下への本文表示だけ止める。 */
+.post-description {
+  display: none;
+}

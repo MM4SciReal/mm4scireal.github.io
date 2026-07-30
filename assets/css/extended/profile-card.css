@@ -1,0 +1,65 @@
+/* Speakers / Organizers 共通のプロフィールカード。
+   PaperMod の `.profile` は home の profile mode 専用（min-height: 100vh）なので使わないこと。
+   セレクタを 2 段にしているのは `.md-content p:not(:last-child)` 等を上書きするため。 */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 24px 0 32px;
+}
+
+.profile-grid .profile-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.profile-grid .profile-card img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 12px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--tertiary);
+}
+
+.profile-grid .profile-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.profile-grid .profile-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.profile-grid .profile-card .profile-card__role,
+.profile-grid .profile-card .profile-card__affiliation {
+  color: var(--secondary);
+}
+
+.profile-grid .profile-card .profile-card__bio {
+  margin-top: 8px;
+}
+
+/* 個人サイト等へのリンク。名前・顔写真のどちらを <a> で囲んでもよい。
+   `:not(.anchor)` はテーマの `.md-content a:not(.anchor)` に詳細度で勝つため。 */
+.profile-grid .profile-card a:not(.anchor) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-grid .profile-card a:not(.anchor):hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.profile-grid .profile-card a:not(.anchor) img {
+  transition: opacity 0.15s ease;
+}
+
+.profile-grid .profile-card a:not(.anchor):hover img {
+  opacity: 0.8;
+}
