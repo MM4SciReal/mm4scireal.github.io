@@ -44,7 +44,19 @@ ShowFullTextinRSS = false
 mainSections = ['news']
 
 [params.label]
-text = 'MM4SciReal'
+text = 'MM4SciReal @ ACCV 2026'
+
+#######################################
+# OGP 画像
+# PaperMod の og:image / twitter:image は .Params.cover.image しか見ず、
+# site params にフォールバックしないため cascade で全ページに配る。
+# hidden = true はページ本文側のカバー画像表示だけを止める（メタタグには影響しない）。
+#######################################
+[[cascade]]
+[cascade.cover]
+image = '/images/og.jpg'
+alt = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'
+hidden = true
 
 [params.assets]
 disableHLJS = true
