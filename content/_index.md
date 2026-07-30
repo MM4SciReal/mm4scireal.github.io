@@ -5,7 +5,7 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
 
 <div class="hero">
   <div class="hero__inner">
-    <h1 class="hero__title">MM4SciReal: Multimodal AI for Science and the Real World</h1>
+    <h1 class="hero__title">MM4SciReal:<br>Multimodal AI for Science and the Real World</h1>
     <p class="hero__subtitle">The 1st Workshop, co-located with ACCV 2026</p>
     <p class="hero__meta"><a href="https://accv2026.org">ACCV 2026</a> &middot; Date: TBA &middot; Location: Osaka, Japan</p>
     <p class="hero__meta">Contact: <a href="mailto:mm4scireal@googlegroups.com">mm4scireal@googlegroups.com</a></p>

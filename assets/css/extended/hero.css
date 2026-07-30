@@ -1,16 +1,26 @@
+/* hero を 100vw にすると、クラシックなスクロールバーを持つ環境では
+   スクロールバー幅の分だけ横スクロールが発生するため抑止する。 */
+html {
+  overflow-x: hidden;
+}
+
 /* Home ヒーロー: 背景画像にタイトル等をオーバーレイ表示する */
 .hero {
   position: relative;
   display: flex;
   align-items: flex-end;
-  min-height: 380px;
-  margin: 0 0 2rem;
-  border-radius: 16px;
-  overflow: hidden;
+  min-height: 420px;
+  /* .post-content の内側からウィンドウ全幅へ広げる。上マージンで
+     .main の padding（--gap）と .post-content の margin-top（30px）を打ち消し、
+     ヘッダー直下に密着させる。 */
+  width: 100vw;
+  margin-top: calc((var(--gap) + 30px) * -1);
+  margin-inline: calc(50% - 50vw);
+  margin-bottom: 2rem;
   background-color: #1e3a8a; /* 画像読み込み前のフォールバック */
   /* バンドル後の stylesheet は /<base>/assets/css/ に出力されるため、
      画像はそこから 2 階層上の /<base>/images/ を相対指定する（サブパス公開でも壊れない）。 */
-  background-image: url("../../images/hero.png");
+  background-image: url("../../images/hero.webp");
   background-size: cover;
   background-position: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
@@ -28,10 +38,14 @@
   );
 }
 
+/* 全幅の帯の中で、テキストだけは本文カラムと左端を揃える。 */
 .hero__inner {
   position: relative;
   z-index: 1;
-  padding: 2rem 2.25rem;
+  width: 100%;
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: 0 auto;
+  padding: 2rem var(--gap);
   color: #fff;
 }
 
@@ -50,12 +64,15 @@
   letter-spacing: 0.06em;
 }
 
+/* 2 行目 "Multimodal AI for Science and the Real World" が本文カラム幅（900px）に
+   収まる上限が 2.4rem。ここを上げると 3 行に折り返す。 */
 .hero .hero__inner .hero__title {
   margin: 0 0 0.4rem;
   color: #fff;
-  font-size: clamp(1.7rem, 4.2vw, 2.6rem);
+  font-size: clamp(1.7rem, 4.2vw, 2.4rem);
   line-height: 1.15;
   font-weight: 700;
+  letter-spacing: -0.015em;
 }
 
 .hero .hero__inner .hero__subtitle {
@@ -80,9 +97,9 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 300px;
+    min-height: 360px;
   }
   .hero__inner {
-    padding: 1.5rem;
+    padding: 1.5rem var(--gap);
   }
 }

@@ -11,3 +11,5 @@ hugo_stats.json
 
 # Claude
 tasks
+# 元画像（配信対象外）
+/sources/
