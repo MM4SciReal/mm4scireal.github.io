@@ -1,0 +1,22 @@
+{{- /*
+  Home ヒーローの背景写真。使い方: <div class="hero">{{< hero-image >}} ... </div>
+
+  CSS の background-image ではなく <img srcset> にしているのは、
+  背景画像だと CSS をパースし終わるまでブラウザが存在を知れず、
+  この画像（LCP 要素）の取得開始が数百 ms 遅れるため。HTML に置けば
+  プリロードスキャナが即座に見つけ、ビューポートに応じた幅も選べる。
+
+  sizes は 100vw。実際には object-fit: cover の高さ合わせで
+  ビューポート幅より広く描画されるが、暗いグラデーションを重ねた
+  装飾写真なので等倍相当で十分（厳密に合わせるとモバイルで
+  1920px 版を掴んでしまい、転送量削減の意味がなくなる）。
+*/ -}}
+{{- $src := resources.Get "images/hero.webp" -}}
+{{- if not $src }}{{ errorf "hero-image: assets/images/hero.webp が無い (%s)" .Position }}{{ end -}}
+{{- $srcset := slice -}}
+{{- range slice 640 960 1280 1600 1920 -}}
+{{- $r := $src.Resize (printf "%dx webp q78" .) -}}
+{{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
+{{- end -}}
+{{- $default := $src.Resize "1280x webp q78" -}}
+<img class="hero__bg" src="{{ $default.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="100vw" width="{{ $default.Width }}" height="{{ $default.Height }}" alt="" fetchpriority="high" decoding="async">

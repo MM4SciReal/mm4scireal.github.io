@@ -4,6 +4,7 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
 ---
 
 <div class="hero">
+  {{< hero-image >}}
   <div class="hero__inner">
     <h1 class="hero__title">MM4SciReal:<br>Multimodal AI for Science and the Real World</h1>
     <p class="hero__subtitle">The 1st Workshop, co-located with ACCV 2026</p>

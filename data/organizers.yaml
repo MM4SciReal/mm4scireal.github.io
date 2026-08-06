@@ -1,0 +1,54 @@
+# Organizing Committee。表示順はこのファイルの並び順。
+# image は assets/images/organizers/ 配下のファイル名（省略すると placeholder になる）。
+- name: Kazuya Nishimura
+  role: Assistant Professor
+  affiliation: The University of Osaka
+  url: https://naivete5656.github.io/index-e.html
+  image: nishimura.png
+
+- name: Duong M. Nguyen
+  role: Ph.D. Student
+  affiliation: University of Illinois Urbana Champaign
+  url: https://nmduonggg.github.io
+  image: nguyen.png
+
+- name: Shumpei Takezaki
+  role: Ph.D. Student
+  affiliation: Kyushu University
+  url: https://shumpei-takezaki.github.io
+  image: takezaki.jpg
+
+- name: Yuichiro Iwashita
+  role: Ph.D. Student
+  affiliation: DFKI GmbH / RPTU
+  url: https://yiwashita.com
+  image: iwashita.jpg
+
+- name: Jovana Panic
+  role: Specially Appointed Researcher
+  affiliation: The University of Osaka
+  url: https://prime.osaka-u.ac.jp/member/jovana-panic/
+  image: panic.jpg
+
+- name: Lucas Deregnaucourt
+  role: Specially Appointed Researcher
+  affiliation: The University of Osaka
+  url: https://is.d3c.osaka-u.ac.jp/en/authors/lucas-deregnaucourt/
+
+- name: Varsha Sharma
+  role: Ph.D. Student
+  affiliation: The University of Osaka
+  url: https://is.d3c.osaka-u.ac.jp/en/authors/varsha-sharma/
+  image: sharma.png
+
+- name: Ryoma Bise
+  role: Professor
+  affiliation: Kyushu University
+  url: https://human.ait.kyushu-u.ac.jp/~bise/index-en.html
+  image: bise.jpg
+
+- name: Mani Ramanagopal
+  role: Project Scientist
+  affiliation: Carnegie Mellon University
+  url: https://marvils.org
+  image: ramanagopal.jpeg

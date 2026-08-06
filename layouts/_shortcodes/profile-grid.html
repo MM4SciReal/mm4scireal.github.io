@@ -1,0 +1,35 @@
+{{- /*
+  プロフィールカードのグリッド。使い方: {{< profile-grid organizers >}}
+
+  引数はデータファイル名で、data/<key>.yaml と assets/images/<key>/ の
+  両方を指す。顔写真はビルド時に 240px 角の webp へ変換して配信する
+  （原寸は数 MB あるため、そのまま配ると表示サイズの 100 倍以上になる）。
+*/ -}}
+{{- $key := .Get 0 -}}
+{{- $people := index hugo.Data $key -}}
+{{- if not $people }}{{ errorf "profile-grid: data/%s.yaml が読めない (%s)" $key .Position }}{{ end -}}
+{{- $display := 120 -}}{{- /* .profile-card img の CSS 上のサイズと揃える */ -}}
+{{- $retina := mul $display 2 -}}
+<div class="profile-grid">
+{{- range $i, $p := $people }}
+{{- $src := "" -}}
+{{- with $p.image -}}
+{{- $asset := resources.Get (printf "images/%s/%s" $key .) -}}
+{{- if not $asset }}{{ errorf "profile-grid: assets/images/%s/%s が無い" $key . }}{{ end -}}
+{{- /* 元画像が 240px 角に満たないときは引き伸ばさない */ -}}
+{{- $size := math.Min $asset.Width $asset.Height | int -}}
+{{- if gt $size $retina }}{{ $size = $retina }}{{ end -}}
+{{- $src = ($asset.Fill (printf "%dx%d webp q80 Center" $size $size)).RelPermalink -}}
+{{- end -}}
+{{- if not $src }}{{ $src = "images/placeholder.svg" | relURL }}{{ end -}}
+<div class="profile-card">
+{{- with $p.url }}<a href="{{ . }}">{{ end -}}
+<img src="{{ $src }}" alt="{{ $p.name }}" width="{{ $display }}" height="{{ $display }}" decoding="async"{{ if ge $i 4 }} loading="lazy"{{ end }}>
+<h3>{{ $p.name }}</h3>
+{{- with $p.role }}<p class="profile-card__role">{{ . }}</p>{{ end }}
+{{- with $p.affiliation }}<p class="profile-card__affiliation">{{ . }}</p>{{ end }}
+{{- with $p.bio }}<p class="profile-card__bio">{{ . }}</p>{{ end }}
+{{- with $p.url }}</a>{{ end }}
+</div>
+{{- end }}
+</div>

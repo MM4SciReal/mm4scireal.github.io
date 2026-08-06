@@ -17,12 +17,26 @@ html {
   margin-top: calc((var(--gap) + 30px) * -1);
   margin-inline: calc(50% - 50vw);
   margin-bottom: 2rem;
-  background-color: #1e3a8a; /* 画像読み込み前のフォールバック */
-  /* バンドル後の stylesheet は /<base>/assets/css/ に出力されるため、
-     画像はそこから 2 階層上の /<base>/images/ を相対指定する（サブパス公開でも壊れない）。 */
-  background-image: url("../../images/hero.webp");
-  background-size: cover;
-  background-position: center;
+  /* 写真が届くまでの下地。ライトモードでは地が白のため、これが無いと
+     白文字のタイトルが読めなくなる。::after のグラデーションと同色。 */
+  background-color: #0a0f23;
+  overflow: hidden;
+}
+
+/* 背景写真。CSS の background-image ではなく hero-image ショートコードが
+   出力する <img srcset> を敷いている（理由はショートコード側のコメント参照）。
+   object-fit: cover が background-size: cover と同じ振る舞いをする。
+   margin / border-radius は本文画像用の `.md-content img` を打ち消すためで、
+   消すと上端に 1rem の隙間が空き角も丸まる。 */
+.hero .hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* テキスト可読性のための下方向グラデーション */
