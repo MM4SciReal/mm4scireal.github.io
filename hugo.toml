@@ -18,8 +18,9 @@ disableKinds = ['taxonomy', 'term']
 [pagination]
 pagerSize = 10
 
+# JSON は PaperMod の検索用インデックス。検索窓を置かないため出力しない。
 [outputs]
-home = ['HTML', 'RSS', 'JSON']
+home = ['HTML', 'RSS']
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -56,6 +57,10 @@ text = 'MM4SciReal @ ACCV 2026'
 # hidden = true はページ本文側のカバー画像表示だけを止める（メタタグには影響しない）。
 #######################################
 [[cascade]]
+# og:locale を明示する。PaperMod の opengraph.html は
+# `or .Params.locale site.Language.LanguageCode` の順で見るため、
+# ここで locale を与えると非推奨 API 側が評価されなくなる。
+locale = 'en-us'
 [cascade.cover]
 image = '/images/og.jpg'
 alt = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'

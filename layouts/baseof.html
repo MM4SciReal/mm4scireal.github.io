@@ -1,0 +1,41 @@
+{{- /*
+  PaperMod の layouts/baseof.html のコピー。差分は <html> の dir 属性 3 箇所だけ。
+
+  テーマは .Language.LanguageDirection を使うが、これは Hugo 0.158.0 で非推奨。
+  このサイトは英語固定で文字方向が変わらないため、後継 API に置き換えるのではなく
+  リテラルの "auto"（テーマ側の既定値と同じ）にしてある。出力は変わらない。
+
+  upstream が非推奨対応をしたら、このファイルは削除してテーマ側に戻すこと。
+  比較元: themes/PaperMod/layouts/baseof.html
+*/ -}}
+{{- if lt hugo.Version "0.146.0" }}
+{{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
+{{- end -}}
+
+<!DOCTYPE html>
+{{- $theme := site.Params.defaultTheme | default "auto" }}
+{{- if eq $theme "dark" }}
+<html lang="{{ site.Language }}" dir="auto" data-theme="dark">
+{{- else if eq $theme "light" }}
+<html lang="{{ site.Language }}" dir="auto" data-theme="light">
+{{- else }}
+<html lang="{{ site.Language }}" dir="auto" data-theme="auto">
+{{- end }}
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
+<body class="list" id="top">
+{{- else }}
+<body id="top">
+{{- end }}
+    {{ partialCached "header.html" . .Page -}}
+    <main class="main">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
+
+</html>
