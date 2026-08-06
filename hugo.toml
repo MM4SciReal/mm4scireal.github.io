@@ -72,15 +72,16 @@ SiteVerificationTag = 'ucdQM-YOL8jHp0dRvQNIjsXg46e6s5CnP8iT_9vipeQ'
 #######################################
 # schema.org Event 構造化データ（トップページのみ出力）
 # Google の Event リッチリザルトは startDate が必須のため、
-# 開催日が確定するまで startDate は空にしておく（空なら JSON-LD 自体を出力しない）。
-# 日程確定後に startDate / endDate を 'YYYY-MM-DD' で埋めれば自動で出力される。
+# startDate が空なら JSON-LD 自体を出力しない。
 #######################################
 [params.event]
-startDate = ''
-endDate = ''
-venue = 'ACCV 2026'
+startDate = '2026-12-15'
+endDate = '2026-12-15'
+venue = 'Osaka International Convention Center (Grand Cube Osaka)'
+street = '5-3-51 Nakanoshima, Kita-ku'
 locality = 'Osaka'
 region = 'Osaka'
+postalCode = '530-0005'
 country = 'JP'
 
 [[params.socialIcons]]

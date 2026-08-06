@@ -7,7 +7,7 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
   <div class="hero__inner">
     <h1 class="hero__title">MM4SciReal:<br>Multimodal AI for Science and the Real World</h1>
     <p class="hero__subtitle">The 1st Workshop, co-located with ACCV 2026</p>
-    <p class="hero__meta"><a href="https://accv2026.org">ACCV 2026</a> &middot; Date: TBA &middot; Location: Osaka, Japan</p>
+    <p class="hero__meta"><a href="https://accv2026.org">ACCV 2026</a> &middot; December 15, 2026 (Full-day) &middot; Room 1001, Grand Cube Osaka, Japan</p>
     <p class="hero__meta">Contact: <a href="mailto:mm4scireal@googlegroups.com">mm4scireal@googlegroups.com</a></p>
   </div>
 </div>
@@ -35,9 +35,13 @@ See the full **[Call for Papers]({{< relref "call-for-papers.md" >}})** for subm
 | Paper submission deadline | **TBA** |
 | Notification to authors | **TBA** |
 | Camera-ready deadline | **TBA** |
-| Workshop date | **TBA** |
+| Workshop date | **December 15, 2026 (Full-day)** |
 
 *All deadlines are 23:59 [Anywhere on Earth (AoE)](https://time.is/Anywhere_on_Earth) unless noted otherwise.*
+
+## Venue
+
+Room 1001, Osaka International Convention Center (Grand Cube Osaka), Osaka, Japan.
 
 ## News
 

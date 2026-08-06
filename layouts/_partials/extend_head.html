@@ -19,8 +19,10 @@
     "name" .venue
     "address" (dict
       "@type" "PostalAddress"
+      "streetAddress" .street
       "addressLocality" .locality
       "addressRegion" .region
+      "postalCode" .postalCode
       "addressCountry" .country))
   "organizer" (dict
     "@type" "Organization"
