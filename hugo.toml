@@ -12,6 +12,9 @@ buildFuture = false
 buildExpired = false
 enableEmoji = true
 
+# 記事分類を使わないため、中身が空の /categories/ と /tags/ を出力しない。
+disableKinds = ['taxonomy', 'term']
+
 [pagination]
 pagerSize = 10
 
@@ -65,6 +68,20 @@ disableFingerprinting = false
 # Google Search Console の所有権確認用メタタグ。
 [params.analytics.google]
 SiteVerificationTag = 'ucdQM-YOL8jHp0dRvQNIjsXg46e6s5CnP8iT_9vipeQ'
+
+#######################################
+# schema.org Event 構造化データ（トップページのみ出力）
+# Google の Event リッチリザルトは startDate が必須のため、
+# 開催日が確定するまで startDate は空にしておく（空なら JSON-LD 自体を出力しない）。
+# 日程確定後に startDate / endDate を 'YYYY-MM-DD' で埋めれば自動で出力される。
+#######################################
+[params.event]
+startDate = ''
+endDate = ''
+venue = 'ACCV 2026'
+locality = 'Osaka'
+region = 'Osaka'
+country = 'JP'
 
 [[params.socialIcons]]
 name = 'email'
