@@ -62,6 +62,10 @@ hidden = true
 disableHLJS = true
 disableFingerprinting = false
 
+# Google Search Console の所有権確認用メタタグ。
+[params.analytics.google]
+SiteVerificationTag = 'ucdQM-YOL8jHp0dRvQNIjsXg46e6s5CnP8iT_9vipeQ'
+
 [[params.socialIcons]]
 name = 'email'
 title = 'Contact the organizers'
