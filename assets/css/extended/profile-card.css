@@ -40,6 +40,20 @@
   color: var(--secondary);
 }
 
+/* ワークショップ内での担当。所属や職位より先に目に入るようバッジにする。 */
+.profile-grid .profile-card .profile-card__workshop-role {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--tertiary);
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
 .profile-grid .profile-card .profile-card__bio {
   margin-top: 8px;
 }

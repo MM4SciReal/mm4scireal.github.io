@@ -26,6 +26,7 @@
 {{- with $p.url }}<a href="{{ . }}">{{ end -}}
 <img src="{{ $src }}" alt="{{ $p.name }}" width="{{ $display }}" height="{{ $display }}" decoding="async"{{ if ge $i 4 }} loading="lazy"{{ end }}>
 <h3>{{ $p.name }}</h3>
+{{- with $p.workshop_role }}<p class="profile-card__workshop-role">{{ . }}</p>{{ end }}
 {{- with $p.role }}<p class="profile-card__role">{{ . }}</p>{{ end }}
 {{- with $p.affiliation }}<p class="profile-card__affiliation">{{ . }}</p>{{ end }}
 {{- with $p.bio }}<p class="profile-card__bio">{{ . }}</p>{{ end }}

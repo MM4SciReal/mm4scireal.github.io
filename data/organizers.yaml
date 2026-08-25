@@ -1,54 +1,63 @@
-# Organizing Committee。表示順はこのファイルの並び順。
+# Organizing Committee。表示順はこのファイルの並び順（workshop_role ごとにまとめている）。
 # image は assets/images/organizers/ 配下のファイル名（省略すると placeholder になる）。
 - name: Kazuya Nishimura
+  workshop_role: Primary Organizer
   role: Assistant Professor
   affiliation: The University of Osaka
   url: https://naivete5656.github.io/index-e.html
   image: nishimura.png
 
-- name: Duong M. Nguyen
-  role: Ph.D. Student
-  affiliation: University of Illinois Urbana Champaign
-  url: https://nmduonggg.github.io
-  image: nguyen.png
-
 - name: Shumpei Takezaki
+  workshop_role: Publication Lead
   role: Ph.D. Student
   affiliation: Kyushu University
   url: https://shumpei-takezaki.github.io
   image: takezaki.jpg
 
-- name: Yuichiro Iwashita
-  role: Ph.D. Student
-  affiliation: DFKI GmbH / RPTU
-  url: https://yiwashita.com
-  image: iwashita.jpg
+- name: Lucas Deregnaucourt
+  workshop_role: Publication Lead
+  role: Specially Appointed Researcher
+  affiliation: The University of Osaka
+  url: https://is.d3c.osaka-u.ac.jp/en/authors/lucas-deregnaucourt/
 
 - name: Jovana Panic
+  workshop_role: Local Arrangements
   role: Specially Appointed Researcher
   affiliation: The University of Osaka
   url: https://prime.osaka-u.ac.jp/member/jovana-panic/
   image: panic.jpg
 
-- name: Lucas Deregnaucourt
-  role: Specially Appointed Researcher
-  affiliation: The University of Osaka
-  url: https://is.d3c.osaka-u.ac.jp/en/authors/lucas-deregnaucourt/
-
 - name: Varsha Sharma
+  workshop_role: Local Arrangements
   role: Ph.D. Student
   affiliation: The University of Osaka
   url: https://is.d3c.osaka-u.ac.jp/en/authors/varsha-sharma/
   image: sharma.png
 
+- name: Yuichiro Iwashita
+  workshop_role: Web Chair
+  role: Ph.D. Student
+  affiliation: DFKI GmbH / RPTU
+  url: https://yiwashita.com
+  image: iwashita.jpg
+
 - name: Ryoma Bise
+  workshop_role: Advisory Chair
   role: Professor
   affiliation: Kyushu University
   url: https://human.ait.kyushu-u.ac.jp/~bise/index-en.html
   image: bise.jpg
 
 - name: Mani Ramanagopal
+  workshop_role: Advisory Chair
   role: Project Scientist
   affiliation: Carnegie Mellon University
   url: https://marvils.org
   image: ramanagopal.jpeg
+
+- name: Duong M. Nguyen
+  workshop_role: Advisory Chair
+  role: Ph.D. Student
+  affiliation: University of Illinois Urbana Champaign
+  url: https://nmduonggg.github.io
+  image: nguyen.png
