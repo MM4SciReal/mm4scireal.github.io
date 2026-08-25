@@ -2,7 +2,7 @@
 # サブパスなしのルート公開のため baseURL は末尾スラッシュのみ。
 baseURL = 'https://mm4scireal.github.io/'
 locale = 'en-us'
-title = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'
+title = 'MM4SciReal @ ACCV 2026'
 theme = 'PaperMod'
 
 enableInlineShortcodes = true
@@ -30,7 +30,7 @@ unsafe = true
 #######################################
 [params]
 env = 'production'
-title = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'
+title = 'MM4SciReal @ ACCV 2026'
 description = 'MM4SciReal: Multimodal AI for Science and the Real World, Workshop at ACCV 2026.'
 keywords = ['MM4SciReal', 'ACCV 2026', 'Multimodal AI', 'AI for Science', 'Vision-Language Models', 'Computer Vision', 'Workshop']
 DateFormat = 'January 2, 2006'

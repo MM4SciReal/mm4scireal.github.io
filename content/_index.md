@@ -1,5 +1,5 @@
 ---
-title: "MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026"
+title: "MM4SciReal @ ACCV 2026"
 description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real World, co-located with ACCV 2026."
 ---
 
