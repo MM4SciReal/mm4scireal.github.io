@@ -21,30 +21,33 @@ Scientific and real-world phenomena can only be captured through partial, noisy,
 
 We welcome submissions on (but not limited to):
 
-- Multimodal learning for inferring latent structure from incomplete, heterogeneous scientific observations
-- Integrating heterogeneous signals with vision-language, biological signals, sensor readings, molecular data, time series, and simulation outputs—with structure from physics, chemistry, biology, geometry, and causal inference
+- Multimodal learning from incomplete, noisy, and heterogeneous scientific observations
+- Integration of vision with language, biological and omics signals, sensor readings, molecular data, time series, and simulation outputs
+- Learning methods informed by physics, chemistry, biology, geometry, or causal structure
 - Multimodal foundation models for scientific discovery and real-world decision making
 - Vision-language, audio-language, sensor-language, and 3D-language models
 - Multimodal reasoning over images, text, tables, equations, graphs, videos, and simulations
+- Data-efficient and label-efficient learning for scientific domains with limited or noisy annotations
+- Applications in medicine, biology, materials science, robotics, earth and environmental science, and other scientific or real-world domains
 
 See the full **[Call for Papers]({{< relref "call-for-papers.md" >}})** for submission details.
 
 ## Important Dates
 
-| Milestone | Date |
-| --- | --- |
-| Paper submission deadline | **TBA** |
-| Notification to authors | **TBA** |
-| Camera-ready deadline | **TBA** |
+| Event | Date |
+|---|---|
+| Archival paper submission deadline | **October 1, 2026 23:59 (AoE)** |
+| Non-archival submission deadline | **October 1, 2026 23:59 (AoE)** |
+| Archival author notification | **October 20, 2026 23:59 (AoE)** |
+| Archival camera-ready deadline | **October 24, 2026 23:59 (AoE)** |
+| Non-archival author notification | **October 30, 2026 23:59 (AoE)** |
 | Workshop date | **December 15, 2026 (Full-day)** |
 
-*All deadlines are 23:59 [Anywhere on Earth (AoE)](https://time.is/Anywhere_on_Earth) unless noted otherwise.*
+*All deadlines are 23:59 [Anywhere on Earth (AoE)](https://time.is/Anywhere_on_Earth).*
 
 ## Venue
 
 Room 1001, Osaka International Convention Center (Grand Cube Osaka), Osaka, Japan.
-
-## News
 
 ## Contact
 

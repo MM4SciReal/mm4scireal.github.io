@@ -1,0 +1,2 @@
+{{- $href := .Get "href" | default (.Get 0) -}}
+<a class="btn" href="{{ $href }}">{{ trim .Inner "\n" | .Page.RenderString }}</a>
