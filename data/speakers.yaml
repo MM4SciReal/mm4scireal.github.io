@@ -1,0 +1,33 @@
+# Invited Speakers。表示順はこのファイルの並び順（プログラムの登壇順に合わせている）。
+# image は assets/images/speakers/ 配下のファイル名（省略すると placeholder になる）。
+# 使えるキーは data/organizers.yaml と同じ:
+#   name / role / affiliation / url / image / bio（bio はカード下部に本文として出る）
+- name: Sungho Suh
+  role: Assistant Professor
+  affiliation: Korea University
+  url: https://sites.google.com/view/sunghosuh/team
+  image: suh.jpg
+
+- name: Donghyun Kim
+  role: Assistant Professor
+  affiliation: Korea University
+  url: https://utl.korea.ac.kr/team/
+  image: kim.jpg
+
+- name: Kuniaki Saito
+  role: Senior Researcher
+  affiliation: OMRON SINIC X
+  url: https://ksaito-ut.github.io
+  image: saito.jpeg
+
+- name: Lin Gu
+  role: Assistant Professor
+  affiliation: Tohoku University
+  url: https://sites.google.com/view/linguedu/home
+  image: gu.jpg
+
+- name: Yuta Suzuki
+  role: Researcher
+  affiliation: Toyota Motor Corporation
+  url: https://suzuki.phd/
+  image: suzuki.jpeg

@@ -3,7 +3,9 @@
    セレクタを 2 段にしているのは `.md-content p:not(:last-child)` 等を上書きするため。 */
 .profile-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* 本文幅 900px（--main-width）で 3 列になる最小幅。200px にすると 4 列に
+     なり、1 枚あたりが窮屈になる。狭い画面では 2 列 → 1 列に落ちる。 */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 24px;
   margin: 24px 0 32px;
 }
