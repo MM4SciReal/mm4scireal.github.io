@@ -25,6 +25,11 @@ home = ['HTML', 'RSS']
 [markup.goldmark.renderer]
 unsafe = true
 
+# 見出し以外のブロック（表など）にも `{class="..."}` で class を付けられるようにする。
+# Program の進行表だけを CSS で狙うために必要。
+[markup.goldmark.parser.attribute]
+block = true
+
 #######################################
 # PaperMod パラメータ
 #######################################

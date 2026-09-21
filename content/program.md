@@ -9,22 +9,23 @@ description: "Workshop schedule and invited talks for MM4SciReal (Multimodal AI 
 
 ## Tentative Schedule
 
-The program below is **tentative** and subject to change. Session titles, speakers, timings, and room assignments will be finalized closer to the workshop date, and the schedule may be adjusted to align with the ACCV 2026 conference-wide program.
+The program below is **tentative** and subject to change. Speaker profiles are available on the **[Invited Speakers]({{< relref "speakers.md" >}})** page.
 
 | Time | Program | Room |
 |---|---|---|
-| 09:00-09:10 | **Opening and workshop overview**<br>Welcome, scope, and practical announcements | 1001 |
-| 09:10-09:50 | **Invited Session I**<br>40 mins talk and Q&A | 1001 |
-| 09:50-10:30 | **Invited Session I**<br>40 mins talk and Q&A | 1001 |
-| 10:30-10:40 | **Oral session I**<br>10 mins | 1001 |
-| 10:49-11:40 | **Coffee & Poster Session & Networking**<br>Complete poster mounting, Archival and non-archival poster tracks; final count subject to venue capacity | 1003 |
-| 11:40-12:40 | **Lunch break**<br>Adjust to the ACCV-wide catering schedule when available | - |
-| 12:40-13:20 | **Invited Session II**<br>40 mins talk and Q&A | 1001 |
-| 13:20-14:00 | **Invited Session II**<br>40 mins talk and Q&A | 1001 |
-| 14:00-14:10 | **Oral session II**<br>10 mins | 1001 |
-| 14:10-14:50 | **Coffee break**<br>10 mins break within the 14:10-14:50 afternoon coffee service | Coffee service area |
-| 14:50-15:30 | **Invited Session III**<br>40 mins talk and Q&A | 1001 |
-| 15:30-16:10 | **Invited Session III**<br>40 mins talk and Q&A | 1001 |
-| 16:10-16:20 | **Oral session III**<br>10 mins | 1001 |
-| 16:20-16:45 | **Moderated discussion & Closing remarks**<br>Topic and moderator to be confirmed | 1001 |
-| 16:55-17:00 | **Contingency and room-clear buffer**<br>The workshop must finish by 17:00 | 1001 |
+| 09:30-09:50 | **Opening and workshop overview** | 1001 |
+| 10:00-10:40 | **Invited Session I: Human-Centric and Interactive Systems**<br>Sungho Suh (Korea University)<br>30 mins talk and 10 mins Q&A | 1001 |
+| 10:40-10:50 | **Oral Session I** | 1001 |
+| 10:50-11:00 | **Coffee pickup and transfer**<br>Collect coffee and move to Room 1003 | Coffee service area → 1003 |
+| 11:00-12:00 | **Coffee & Poster Session & Networking**<br>Archival and non-archival poster tracks | 1003 |
+| 12:00-13:00 | **Lunch break** | - |
+| 13:00-13:40 | **Invited Session II: Generalizable Vision-Language and Transfer Learning**<br>Donghyun Kim (Korea University)<br>30 mins talk and 10 mins Q&A | 1001 |
+| 13:40-14:20 | **Invited Session II: Generalizable Vision-Language and Transfer Learning**<br>Kuniaki Saito (OMRON SINIC X)<br>30 mins talk and 10 mins Q&A | 1001 |
+| 14:20-14:30 | **Oral Session II** | 1001 |
+| 14:30-14:40 | **Coffee break** | Coffee service area |
+| 14:40-15:20 | **Invited Session III: Multimodal AI for Scientific Discovery**<br>Lin Gu (Tohoku University)<br>30 mins talk and 10 mins Q&A | 1001 |
+| 15:20-16:00 | **Invited Session III: Multimodal AI for Scientific Discovery**<br>Yuta Suzuki (Toyota Motor Corporation)<br>30 mins talk and 10 mins Q&A | 1001 |
+| 16:00-16:10 | **Oral Session III** | 1001 |
+| 16:10-16:35 | **Moderated discussion**<br>Lin Gu, Sungho Suh, Kuniaki Saito, and Yuta Suzuki | 1001 |
+| 16:35-16:50 | **Closing remarks and announcements** | 1001 |
+{class="schedule"}

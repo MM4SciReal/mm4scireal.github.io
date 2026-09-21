@@ -1,0 +1,8 @@
+/* Program の進行表。Program 列が長いぶん表が本文幅いっぱいまで伸び、
+   1 列目の時刻（"09:30-09:50"）まで折り返されて行の高さが揃わなくなる。
+   1 列目だけ折り返しを止め、幅は内容ちょうどに畳む。
+   Important Dates の 2 列の表は 1 列目が長文なので対象にしない。 */
+.md-content table.schedule td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
