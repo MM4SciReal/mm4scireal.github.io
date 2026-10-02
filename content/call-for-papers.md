@@ -3,6 +3,8 @@ title: "Call for Papers"
 description: "Submission guidelines and important dates for MM4SciReal, the Multimodal AI for Science and the Real World workshop at ACCV 2026."
 ---
 
+> **Submissions are now closed.** The submission deadline for both tracks (October 1, 2026 23:59 AoE) has passed. Thank you to everyone who submitted.
+
 We invite submissions to the ACCV 2026 Workshop on **Multimodal AI for Science and the Real World**, to be held in person on December 15, 2026, at the Osaka International Convention Center (Grand Cube Osaka).
 
 Scientific and real-world phenomena are rarely observed directly or completely. Instead, researchers must reason from partial, noisy, and heterogeneous measurements acquired through different instruments and modalities. This workshop seeks contributions that integrate such observations and connect them with scientific structure—including physics, chemistry, biology, geometry, and causal relationships—to recover latent mechanisms and support scientific discovery and real-world decision making.
@@ -55,7 +57,7 @@ Submissions must follow the official ACCV 2026 paper format and will undergo dou
 
 The main paper must be self-contained. Supplementary material is optional and should provide supporting information rather than introduce essential content omitted from the main paper.
 
-{{< button href="https://openreview.net/group?id=afcv.org/ACCV/2026/Workshop/MM4SciReal#tab-your-consoles" >}}Submit to the Archival Track via OpenReview{{< /button >}}
+{{< button disabled="true" >}}Archival Track submissions closed{{< /button >}}
 
 ### Track 2: Non-archival Poster Track
 
@@ -91,7 +93,7 @@ Accepted submissions will:
 - Not be treated as archival publications
 - Not be made publicly available by the workshop without the authors' permission
 
-{{< button href="https://forms.gle/Yziu8NHnCfxUzY2j9" >}}Submit to the Non-archival Poster Track via Google Form{{< /button >}}
+{{< button disabled="true" >}}Non-archival Poster Track submissions closed{{< /button >}}
 
 ## Contact
 

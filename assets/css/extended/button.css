@@ -22,3 +22,11 @@
   opacity: 0.85;
   text-decoration: none;
 }
+
+.post-content .btn--disabled,
+.post-content .btn--disabled:hover {
+  background: var(--tertiary);
+  color: var(--secondary);
+  opacity: 1;
+  cursor: not-allowed;
+}

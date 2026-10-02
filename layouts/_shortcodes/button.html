@@ -1,2 +1,6 @@
 {{- $href := .Get "href" | default (.Get 0) -}}
+{{- if .Get "disabled" -}}
+<span class="btn btn--disabled" aria-disabled="true">{{ trim .Inner "\n" | .Page.RenderString }}</span>
+{{- else -}}
 <a class="btn" href="{{ $href }}">{{ trim .Inner "\n" | .Page.RenderString }}</a>
+{{- end -}}
