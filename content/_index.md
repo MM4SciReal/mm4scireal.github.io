@@ -13,6 +13,14 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
   </div>
 </div>
 
+## News
+
+- **Oct 2, 2026**: Submissions are now closed for both tracks. Thank you to everyone who submitted!
+- **Sep 21, 2026**: [Invited speakers]({{< relref "speakers.md" >}}) and the [program]({{< relref "program.md" >}}) have been announced.
+- **Aug 25, 2026**: The [Call for Papers]({{< relref "call-for-papers.md" >}}) is out.
+- **Jul 30, 2026**: The workshop website is now live.
+- **Jul 27, 2026**: MM4SciReal has been accepted as a workshop at [ACCV 2026](https://accv2026.org)!
+
 ## Overview
 
 Scientific and real-world phenomena can only be captured through partial, noisy, and heterogeneous observations. This workshop aims to integrate these incomplete signals and connect them to scientific structure (physics, biology, causality) to recover underlying mechanisms, bringing together diverse research communities to shape the next decade of Science AI.
