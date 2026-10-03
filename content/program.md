@@ -16,7 +16,7 @@ The program below is **tentative** and subject to change. Speaker profiles are a
 | 09:30-09:50 | **Opening and workshop overview** | 1001 |
 | 10:00-10:40 | **Invited Session I: Human-Centric and Interactive Systems**<br>Sungho Suh (Korea University)<br>30 mins talk and 10 mins Q&A | 1001 |
 | 10:40-10:50 | **Oral Session I** | 1001 |
-| 10:50-11:00 | **Coffee pickup and transfer**<br>Collect coffee and move to Room 1003 | 1003 |
+| 10:50-11:00 | **Coffee pickup and transfer**<br>Collect coffee and move to Room 1003 | - |
 | 11:00-12:00 | **Coffee & Poster Session & Networking**<br>Archival and non-archival poster tracks | 1003 |
 | 12:00-13:00 | **Lunch break** | - |
 | 13:00-13:40 | **Invited Session II: Generalizable Vision-Language and Transfer Learning**<br>Donghyun Kim (Korea University)<br>30 mins talk and 10 mins Q&A | 1001 |
