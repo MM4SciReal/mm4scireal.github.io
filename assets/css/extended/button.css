@@ -9,24 +9,25 @@
   margin: 1.5rem auto;
   padding: 0.7rem 1.4rem;
   border-radius: var(--radius);
-  background: var(--primary);
-  color: var(--theme);
+  background: var(--accent-soft);
+  color: var(--accent);
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .post-content .btn:hover {
-  opacity: 0.85;
+  background: var(--accent);
+  color: var(--theme);
   text-decoration: none;
 }
 
 .post-content .btn--disabled,
 .post-content .btn--disabled:hover {
-  background: var(--tertiary);
+  /* --tertiary の地だと文字が 4.5:1 を割るため、一段淡い --border にしている。 */
+  background: var(--border);
   color: var(--secondary);
-  opacity: 1;
   cursor: not-allowed;
 }

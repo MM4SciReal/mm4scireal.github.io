@@ -15,6 +15,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   text-align: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .profile-grid .profile-card img {
@@ -48,8 +49,8 @@
   margin: 0 0 6px;
   padding: 2px 10px;
   border-radius: 999px;
-  background: var(--tertiary);
-  color: var(--primary);
+  background: var(--accent-soft);
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -60,22 +61,35 @@
   margin-top: 8px;
 }
 
-/* 個人サイト等へのリンク。名前・顔写真のどちらを <a> で囲んでもよい。
-   `:not(.anchor)` はテーマの `.md-content a:not(.anchor)` に詳細度で勝つため。 */
-.profile-grid .profile-card a:not(.anchor) {
+/* url のあるカードは <a class="profile-card"> になり、カード全体がリンクになる。
+   `:not(.anchor)` はテーマの `.md-content a:not(.anchor)` と palette.css のアクセント色に
+   詳細度で勝つため。 */
+.profile-grid a.profile-card:not(.anchor) {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
 
-.profile-grid .profile-card a:not(.anchor):hover {
+/* 役割バッジ（--accent-soft）が地に溶けないよう、それより一段淡い色にとどめる。 */
+.profile-grid a.profile-card:not(.anchor):hover {
+  background: var(--accent-faint);
+  border-color: var(--tertiary);
+}
+
+.profile-grid a.profile-card:not(.anchor):hover h3 {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
 
-.profile-grid .profile-card a:not(.anchor) img {
+.profile-grid a.profile-card:not(.anchor):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.profile-grid a.profile-card img {
   transition: opacity 0.15s ease;
 }
 
-.profile-grid .profile-card a:not(.anchor):hover img {
+.profile-grid a.profile-card:hover img {
   opacity: 0.8;
 }

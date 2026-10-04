@@ -22,15 +22,14 @@
 {{- $src = ($asset.Fill (printf "%dx%d webp q80 Center" $size $size)).RelPermalink -}}
 {{- end -}}
 {{- if not $src }}{{ $src = "images/placeholder.svg" | relURL }}{{ end -}}
-<div class="profile-card">
-{{- with $p.url }}<a href="{{ . }}">{{ end -}}
+{{- /* url があればカード全体を 1 つのリンクにする（余白部分もクリックできるように）。 */ -}}
+{{- with $p.url }}<a class="profile-card" href="{{ . }}">{{ else }}<div class="profile-card">{{ end -}}
 <img src="{{ $src }}" alt="{{ $p.name }}" width="{{ $display }}" height="{{ $display }}" decoding="async"{{ if ge $i 4 }} loading="lazy"{{ end }}>
 <h3>{{ $p.name }}</h3>
 {{- with $p.workshop_role }}<p class="profile-card__workshop-role">{{ . }}</p>{{ end }}
 {{- with $p.role }}<p class="profile-card__role">{{ . }}</p>{{ end }}
 {{- with $p.affiliation }}<p class="profile-card__affiliation">{{ . }}</p>{{ end }}
 {{- with $p.bio }}<p class="profile-card__bio">{{ . }}</p>{{ end }}
-{{- with $p.url }}</a>{{ end }}
-</div>
+{{- with $p.url }}</a>{{ else }}</div>{{ end }}
 {{- end }}
 </div>

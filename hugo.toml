@@ -72,6 +72,8 @@ alt = 'MM4SciReal: Multimodal AI for Science and the Real World @ ACCV 2026'
 hidden = true
 
 [params.assets]
+# モバイルブラウザのアドレスバー等の色。ダークモードの地（palette.css の --theme）と揃える。
+theme_color = '#0f1420'
 disableHLJS = true
 disableFingerprinting = false
 

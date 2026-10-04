@@ -10,3 +10,12 @@
 .post-description {
   display: none;
 }
+
+/* PaperMod の reset.css は表を display: block にしているため、width: 100% でも
+   行が中身の幅に縮み、本文の右端より手前で途切れる。block は狭い画面で表を
+   横スクロールさせるためのものなので、本文幅が取れる画面でだけ表本来の表示に戻す。 */
+@media (min-width: 600px) {
+  .md-content table:not(.highlighttable) {
+    display: table;
+  }
+}

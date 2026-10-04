@@ -1,0 +1,61 @@
+/* Mist Blue: PaperMod の配色変数を、ヒーロー下地（#0a0f23）寄りのネイビーグレーで上書きする。
+   アクセントは彩度を落とした青 1 色だけにし、ボタンやバッジは淡い地に青文字で塗りつぶさない。
+   本文中のリンクは下線をホバー時だけにしているため、WCAG 1.4.1 に合わせて --link を
+   背景と 4.5:1 以上、本文（--content）と 3:1 以上離している。本文色を変えるときは両方を再計算すること。 */
+:root {
+  --theme: #ffffff;
+  --entry: #ffffff;
+  --primary: #111821;
+  --secondary: #5f6b78;
+  --tertiary: #dfe5ec;
+  --content: #1c2733;
+  --code-bg: #f3f6f9;
+  --border: #e7ebf0;
+  --accent: #3b6488;
+  --accent-soft: #e8eef5;
+  --accent-faint: #f2f6fa;
+  --link: #497aab;
+  --code-block-bg: #171e2c;
+}
+
+:root[data-theme="dark"] {
+  --theme: #0f1420;
+  --entry: #171e2c;
+  --primary: #f3f5f8;
+  --secondary: #8b95a3;
+  --tertiary: #2a3344;
+  --content: #e6eaf0;
+  --code-block-bg: #171e2c;
+  --code-bg: #1e2636;
+  --border: #232b3a;
+  /* ダークではリンクを本文より暗くせざるを得ないため、ボタンやナビも同じ青に揃え、
+     地（--accent-soft）を暗くして 4.5:1 を確保している。 */
+  --accent: #618ab3;
+  --accent-soft: #121f36;
+  --accent-faint: #141b2a;
+  --link: #618ab3;
+}
+
+/* PaperMod はライトモードの一覧ページ（ホームも該当）だけ地を --code-bg にするため、他ページと揃える。 */
+.list {
+  background: var(--theme);
+}
+
+/* .btn はボタン側（button.css）で色を決めるため除外する。 */
+.md-content a:not(.anchor, .btn) {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.md-content a:not(.anchor, .btn):hover {
+  text-decoration: underline;
+}
+
+.menu .active {
+  text-decoration-color: var(--accent);
+}
+
+/* --code-bg はホーム（.list）の地色と同じなので、見出しが背景に溶けないよう淡い青にする。 */
+.md-content table th {
+  background: var(--accent-soft);
+}

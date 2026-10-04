@@ -102,7 +102,8 @@ html {
   line-height: 1.5;
 }
 
-.hero__meta a {
+/* `.md-content a:not(.anchor, .btn)`（palette.css）のアクセント色に勝つための詳細度。 */
+.hero .hero__meta a:not(.anchor) {
   color: #fff;
   text-decoration: underline;
   text-underline-offset: 2px;
