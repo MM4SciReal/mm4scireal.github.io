@@ -1,0 +1,28 @@
+/* ヘッダーのメニューとフッター（ページの枠）の色。 */
+.menu a {
+  color: var(--secondary);
+  transition: color 0.15s ease;
+}
+
+.menu a:hover,
+.menu .active {
+  color: var(--primary);
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.top-link {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.top-link:hover {
+  background: var(--accent);
+  color: var(--theme);
+}
