@@ -15,7 +15,7 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
 
 ## News
 
-- **Oct 21, 2026**: Author notifications for the archival track have been sent. Camera-ready papers are due October 24, 2026 23:59 (AoE).
+- **Oct 21, 2026**: Author notifications for the archival and non-archival tracks have been sent. Archival camera-ready papers are due October 24, 2026 23:59 (AoE).
 - **Oct 2, 2026**: Submissions are now closed for both tracks. Thank you to everyone who submitted!
 - **Sep 21, 2026**: [Invited speakers]({{< relref "speakers.md" >}}) and the [program]({{< relref "program.md" >}}) have been announced.
 - **Aug 25, 2026**: The [Call for Papers]({{< relref "call-for-papers.md" >}}) is out.
@@ -47,9 +47,8 @@ See the full **[Call for Papers]({{< relref "call-for-papers.md" >}})** for subm
 |---|---|
 | Archival paper submission deadline | **October 1, 2026 23:59 (AoE)** |
 | Non-archival submission deadline | **October 1, 2026 23:59 (AoE)** |
-| Archival author notification | **October 20, 2026 23:59 (AoE)** |
+| Archival and non-archival author notification | **October 21, 2026** |
 | Archival camera-ready deadline | **October 24, 2026 23:59 (AoE)** |
-| Non-archival author notification | **October 30, 2026 23:59 (AoE)** |
 | Workshop date | **December 15, 2026 (Full-day)** |
 
 *All deadlines are 23:59 [Anywhere on Earth (AoE)](https://time.is/Anywhere_on_Earth).*
