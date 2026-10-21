@@ -15,6 +15,7 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
 
 ## News
 
+- **Oct 21, 2026**: Author notifications for the archival track have been sent. Camera-ready papers are due October 24, 2026 23:59 (AoE).
 - **Oct 2, 2026**: Submissions are now closed for both tracks. Thank you to everyone who submitted!
 - **Sep 21, 2026**: [Invited speakers]({{< relref "speakers.md" >}}) and the [program]({{< relref "program.md" >}}) have been announced.
 - **Aug 25, 2026**: The [Call for Papers]({{< relref "call-for-papers.md" >}}) is out.
