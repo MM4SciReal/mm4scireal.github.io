@@ -9,8 +9,9 @@
   margin: 1.5rem auto;
   padding: 0.7rem 1.4rem;
   border-radius: var(--radius);
-  background: var(--accent-soft);
-  color: var(--accent);
+  /* 無効ボタン（淡い地）と見分けがつくよう、押せるボタンは塗りつぶしにする。 */
+  background: var(--accent);
+  color: var(--theme);
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
@@ -18,8 +19,13 @@
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* PaperMod の `.md-content a:not(.anchor)` が付ける下線に詳細度で負けるため、a に限定して打ち消す。 */
+.post-content a.btn {
+  text-decoration: none;
+}
+
 .post-content .btn:hover {
-  background: var(--accent);
+  background: var(--content);
   color: var(--theme);
   text-decoration: none;
 }
