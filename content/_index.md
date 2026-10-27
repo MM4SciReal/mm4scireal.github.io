@@ -15,12 +15,15 @@ description: "MM4SciReal — Workshop on Multimodal AI for Science and the Real 
 
 ## News
 
+- **Oct 27, 2026**: The list of accepted archival papers is now available on [OpenReview](https://openreview.net/group?id=afcv.org/ACCV/2026/Workshop/MM4SciReal#tab-accept). Congratulations to all the authors!
 - **Oct 21, 2026**: Author notifications for the archival and non-archival tracks have been sent. Archival camera-ready papers are due October 24, 2026 23:59 (AoE).
 - **Oct 2, 2026**: Submissions are now closed for both tracks. Thank you to everyone who submitted!
 - **Sep 21, 2026**: [Invited speakers]({{< relref "speakers.md" >}}) and the [program]({{< relref "program.md" >}}) have been announced.
 - **Aug 25, 2026**: The [Call for Papers]({{< relref "call-for-papers.md" >}}) is out.
 - **Jul 30, 2026**: The workshop website is now live.
 - **Jul 27, 2026**: MM4SciReal has been accepted as a workshop at [ACCV 2026](https://accv2026.org)!
+
+{{< button href="https://openreview.net/group?id=afcv.org/ACCV/2026/Workshop/MM4SciReal#tab-accept" >}}View Accepted Archival Papers{{< /button >}}
 
 ## Overview
 

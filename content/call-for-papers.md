@@ -3,7 +3,7 @@ title: "Call for Papers"
 description: "Submission guidelines and important dates for MM4SciReal, the Multimodal AI for Science and the Real World workshop at ACCV 2026."
 ---
 
-> **Submissions are now closed.** The submission deadline for both tracks (October 1, 2026 23:59 AoE) has passed. Thank you to everyone who submitted. Author notifications for both tracks were sent on October 21, 2026. Archival camera-ready papers are due **October 24, 2026 23:59 (AoE)**.
+> **Submissions are now closed.** The submission deadline for both tracks (October 1, 2026 23:59 AoE) has passed. Thank you to everyone who submitted. Author notifications for both tracks were sent on October 21, 2026. Archival camera-ready papers are due **October 24, 2026 23:59 (AoE)**. Accepted archival papers are listed on **[OpenReview](https://openreview.net/group?id=afcv.org/ACCV/2026/Workshop/MM4SciReal#tab-accept)**.
 
 We invite submissions to the ACCV 2026 Workshop on **Multimodal AI for Science and the Real World**, to be held in person on December 15, 2026, at the Osaka International Convention Center (Grand Cube Osaka).
 
