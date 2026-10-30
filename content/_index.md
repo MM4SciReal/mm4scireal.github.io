@@ -60,6 +60,15 @@ See the full **[Call for Papers]({{< relref "call-for-papers.md" >}})** for subm
 
 Room 1001, Osaka International Convention Center (Grand Cube Osaka), Osaka, Japan.
 
+## Sponsors
+
+This workshop is supported by the following JST ASPIRE Projects:
+
+- [Deep Sensing: Jointly optimizing sensing and processing for CV/AI applications](https://www.deepsensing.org) (Grant Number: JPMJAP2502)
+- [Formation of a Japan-Germany Multilayered R&D Network for Medical x AI and its Application to Industry Creation](https://aspire-mxai.com/en/) (Grant Number: JPMJAP2403)
+
+<a class="sponsor-logo" href="https://www.jst.go.jp/aspire/"><img src="/images/aspire.png" width="872" height="136" alt="JST ASPIRE" loading="lazy"></a>
+
 ## Contact
 
 Questions? Reach the organizers at [mm4scireal@googlegroups.com](mailto:mm4scireal@googlegroups.com).
