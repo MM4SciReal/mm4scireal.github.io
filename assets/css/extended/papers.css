@@ -1,0 +1,13 @@
+/* Accepted Papers の表。タイトルと著者が長く、"W05-101" の ID まで折り返されるため
+   1 列目だけ折り返しを止めて内容ちょうどの幅に畳む。 */
+.md-content table.papers th:first-child,
+.md-content table.papers td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* タイトル列が中身に合わせて伸び縮みしないよう幅を決めておく。
+   タイトル列のない表（2 列目が最後の Authors）には当てない。 */
+.md-content table.papers th:nth-child(2):not(:last-child) {
+  width: 50%;
+}

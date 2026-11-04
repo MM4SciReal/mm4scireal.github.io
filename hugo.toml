@@ -117,6 +117,12 @@ url = '/call-for-papers/'
 weight = 20
 
 [[menu.main]]
+identifier = 'accepted-papers'
+name = 'Accepted Papers'
+url = '/accepted-papers/'
+weight = 25
+
+[[menu.main]]
 identifier = 'program'
 name = 'Program'
 url = '/program/'

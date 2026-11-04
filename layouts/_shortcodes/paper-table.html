@@ -1,0 +1,23 @@
+{{- /*
+  採択論文の表。使い方: {{< paper-table archival >}}
+
+  引数は data/accepted_papers.yaml のトラック名（archival / non_archival）。
+  openreview（forum ID）がある論文はタイトルを OpenReview へのリンクにする。
+  タイトルを公開しないトラック（title を持たない）は Paper Title 列ごと出さない。
+*/ -}}
+{{- $track := .Get 0 -}}
+{{- $papers := index hugo.Data.accepted_papers $track -}}
+{{- if not $papers }}{{ errorf "paper-table: data/accepted_papers.yaml に %q が無い (%s)" $track .Position }}{{ end -}}
+{{- $withTitle := isset (index $papers 0) "title" -}}
+<table class="papers">
+<thead>
+<tr><th>Paper ID</th>{{ if $withTitle }}<th>Paper Title</th>{{ end }}<th>Authors</th></tr>
+</thead>
+<tbody>
+{{- range $papers }}
+<tr><td>{{ .id }}</td>
+{{- if $withTitle }}<td>{{ if .openreview }}<a href="https://openreview.net/forum?id={{ .openreview }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</td>{{ end -}}
+<td>{{ .authors }}</td></tr>
+{{- end }}
+</tbody>
+</table>

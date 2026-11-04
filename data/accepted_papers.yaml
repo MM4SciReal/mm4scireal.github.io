@@ -1,0 +1,96 @@
+archival:
+  - id: W05-2
+    openreview: 7vbDnH8MRS
+    title: "STARE: Scene Text-Aware multimodal Retrieval for Everyday objects"
+    authors: "Kento Tokura, Ryosuke Korekata, Daichi Yashima, Kei Katsumata, Kanon Amemiya, Miyu Goko, Komei Sugiura"
+
+  - id: W05-3
+    openreview: 9mz8SjHszy
+    title: "Drop the Details, Get the Gist: Dynamic Conceptual Representation for Video Recognition"
+    authors: "Ryoya Yoshiyama, Bowen Wang, Yuta Nakashima"
+
+  - id: W05-4
+    openreview: 9ftNqCX8yv
+    title: "Bridging Pretrained Vision and Symbolic Reasoning Through Intermediate-Layer Grounding"
+    authors: "Girievasan Manivannan, Abhinandan Mandal"
+
+  - id: W05-7
+    openreview: uawGWpmdtN
+    title: "Motion-Guided Cooperative BEV Semantic Segmentation: Adapting LRCP to Delayed Multimodal Features"
+    authors: "Shenghua Chen, Ilya Sabnani, Anton Dahbura, Krishan Sabnani"
+
+  - id: W05-8
+    openreview: w9JuBWA4Nh
+    title: "Task-Level Selection as a Strong Baseline for Routing Heterogeneous Molecular Experts"
+    authors: "Minyoung Shin, Sujee Lee"
+
+  - id: W05-13
+    openreview: VapPZQXOWY
+    title: "Different Timescales, Different Signals: Multimodal Landmark-Visibility Prediction in a Long-Term Webcam Network"
+    authors: "Bryceton Bible, Hairong Qi, Masahiro Toyoura"
+
+  - id: W05-14
+    openreview: hiqKESmhqY
+    title: "Self-Supervised Pretraining for Near-Infrared Chemical Property Prediction across Instruments"
+    authors: "Nicolae Cudlenco, Claudio Orellano, Mohamed Abushosha, Mai Said, Marcal Plans Pujolras, Leonardo Ramirez-Lopez"
+
+non_archival:
+  - id: W05-101
+    authors: "Shivam Gupta"
+
+  - id: W05-102
+    authors: "Sunhee Hwang, Taehyung Lim, Boseong Kim, Minkyun Kim"
+
+  - id: W05-103
+    authors: "Preyansh Srivastava"
+
+  - id: W05-104
+    authors: "Jaimyun Jung, Ka Ram Lim, Heoun Jun Kwon, Sehyeok Oh, Seong Jun Bae, Hoheok Kim, Gian Song, Hye Jung Chang, Ho Won Lee"
+
+  - id: W05-105
+    authors: "Taehan Lee, Hyeonah Jang, Donggeon Lee, Donghee Son, Sang Woo Kim"
+
+  - id: W05-106
+    authors: "Sehyeok Oh, Jaimyun Jung, Junyong Choi, Yoon-Ho Lee, Young-Hee Cho, Mingi Oh, Ho Won Lee"
+
+  - id: W05-107
+    authors: "Hoang Hai Nam Nguyen, Minh Tien Tran, Se-Jong Kim, Hoheok Kim, Seong-Hoon Kang, Ho Won Lee"
+
+  - id: W05-108
+    authors: "Hoang Hai Nam Nguyen, Chihun Lee, Chan Park, Ho Won Lee"
+
+  - id: W05-109
+    authors: "Hirotaka Hachiya, Yuki Saito"
+
+  - id: W05-111
+    authors: "Hoheok Kim, Sehyeok Oh, Jaimyun Jung, Se-jong Kim, Ho Won Lee"
+
+  - id: W05-112
+    authors: "Jieun Kim"
+
+  - id: W05-113
+    authors: "Mingi Oh, Junseok Yoon, Jee Hyuk Ahn, Seong-Hoon Kang, Young-Seok Oh"
+
+  - id: W05-114
+    authors: "Jason Toskov, Oriol Barbany, Rishubh Singh, Jinya Sakurai, Efe Tarhan, Oguzhan Fatih Kar, Roman Bachmann, Amir Zadeh, Jesse Allardice, Chuan Li, Carme Torras, Afshin Dehghan, Amir Zamir"
+
+  - id: W05-115
+    authors: "Kyoungoh Lee, Sangwon Kim, Kwang-Ju Kim"
+
+  - id: W05-116
+    authors: "Eshan Patel, Akhil Chakravarthy, Madhav Kuruba, Chase Rinaldi"
+
+  - id: W05-117
+    authors: "Atsuyuki Miyai, Kiyoharu Aizawa, Toshihiko Yamasaki"
+
+  - id: W05-118
+    authors: "Jiquan Wang, Fang Wan, Chaoshun Hu"
+
+  - id: W05-119
+    authors: "Siddhant Bharadwaj, Ashish Vashist, Rashi Singh, Pranav Vinodh, Nishanth Artham, Runmin Jiang, Xingjian Li, Min Xu"
+
+  - id: W05-120
+    authors: "Navyaa Varma"
+
+  - id: W05-121
+    authors: "Zonghuan Zhuang, Soichiro Nakako, Masakazu Iwamura, Yusuke Okayama, Yosuke Nakaya, Mirei Horiuchi, Kentaro Ido, Masatomo Kuno, Joji Nagasaki, Hiroshi Okamura, Mitsutaka Nishimoto, Mika Nakamae, Yasuhiro Nakashima, Hirohisa Nakamae, Koichi Kise"
